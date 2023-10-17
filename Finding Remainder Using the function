@@ -1,0 +1,12 @@
+# Finding Remainder From Dividend and divisor
+
+
+onEvent("button1", "click", function( ) {
+  var n1 = getNumber("text_input1");
+  var n2 = getNumber("text_input2");
+  setText("labelresult", remainder(n1, n2));
+});
+function remainder(a , b) {
+  var result = a % b;
+  return result;
+}
