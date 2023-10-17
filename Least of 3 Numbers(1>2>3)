@@ -1,0 +1,17 @@
+# Find the least of 3 numbers using parameter function
+
+onEvent("button1", "click", function( ) {
+  var n1 = getNumber("text_input1");
+  var n2 = getNumber("text_input2");
+  var n3 = getNumber("text_input3");
+  Least_num(n1, n2, n3);
+});
+function Least_num(a, b, c) {
+  if (a<=b && a<=c) {
+    setText("label2", a);
+  } else if (b<=a && b<=c) {
+    setText("label2", b);
+  } else {
+    setText("label2", c);
+  }
+}
