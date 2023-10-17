@@ -1,0 +1,24 @@
+####-------___First method of doing parameter function----#####
+--------
+--------
+
+#   onEvent("button1", "click", function( ) {
+#   var inp1 = getNumber("text_input1");
+#    var inp2 = getNumber("text_input2");
+#    setText("label_result", avg(inp1, inp2));
+#  });
+#     function avg(a, b) {
+#    var result = (a+b)/2;
+#    return result;
+#  }
+
+##### ----____2 MEthod this can be done in another form ------####
+#####-----After commit changes can be like-------####
+
+#   onEvent("button1", "click", function( ) {
+#    setText("label_result", avg(getNumber("text_input2"), getNumber("text_input1")));
+#  });
+#    function avg(a, b) {
+#    var result = (a+b)/2;
+#    return result;
+#  }
