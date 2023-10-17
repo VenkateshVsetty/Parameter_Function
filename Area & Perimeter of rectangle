@@ -1,0 +1,43 @@
+# Finding Area & Perimeter of Rectangle using Functions :::---Url's::--_________https://studio.code.org/projects/applab/TaIIntsAxbpqXwRpgBbtAagfh1SHLTmbN1js326bGaQ
+ ------Area of REctangle = (length * width)---------
+----Perimeter of Rectangle = 2* (length * width)-----
+
+
+#   onEvent("button1", "click", function( ) {
+    var length = getNumber("text_input1");
+    var width = getNumber("text_input2");
+    console.log("Area=" + Cal_Area(length, width));
+    });
+   function Cal_Area(l,b) {
+    return (l * b);
+  }
+
+#   onEvent("button2", "click", function( ) {
+    var length = getNumber("text_input1");
+    var width = getNumber("text_input2");
+    console.log("perimeter="+ Cal_Perimeter(length, width));
+   });
+   function Cal_Perimeter(l,b) {
+   return 2 * (l + b);
+   }
+
+
+# ------Another way of excited code for same Area ; Parameter-----------------
+
+
+#    onEvent("button1", "click", function( ) {
+     var length = getNumber("text_input1");
+     var width = getNumber("text_input2");
+     onEvent("button1", "click", function( ) {
+      console.log("Area=" + Cal_Area(length, width));
+   });
+     onEvent("button2", "click", function( ) {
+       console.log("perimeter="+ Cal_Perimeter(length, width));
+    });
+  });
+    function Cal_Area(l,b) {
+     return (l * b);
+    }
+    function Cal_Perimeter(l,b) {
+    return 2 * (l + b);
+   }
